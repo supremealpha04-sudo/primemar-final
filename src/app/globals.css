@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* PrimeMar Brand Colors */
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e2ec;
+  --color-navy-200: #bcccdc;
+  --color-navy-300: #9fb3c8;
+  --color-navy-400: #829ab1;
+  --color-navy-500: #627d98;
+  --color-navy-600: #486581;
+  --color-navy-700: #334e68;
+  --color-navy-800: #243b53;
+  --color-navy-900: #102a43;
+  --color-navy-950: #0a1929;
+
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --color-gold-700: #b45309;
+
+  --color-cream: #faf9f6;
+  --color-surface: #ffffff;
+  --color-muted: #f1f5f9;
+
+  /* Typography */
+  --font-sans: "Inter", "Satoshi", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+
+  /* Spacing */
+  --spacing-sidebar: 280px;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-navy-950);
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-600));
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 4px 6px -1px rgba(10, 25, 41, 0.1), 0 2px 4px -1px rgba(10, 25, 41, 0.06);
+  }
+}

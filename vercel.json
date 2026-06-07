@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/check-eligibility",
+      "schedule": "0 2 * * *"
+    }
+  ]
+}
